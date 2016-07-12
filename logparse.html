@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+  <title>Convert BHNUMS Log Entries</title>
+  <link href="stylesheet.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body class="indexpage"> 
+<h1>Convert BHNUMS Log Entries</h1>
+<p>Convert BHNUMS ISO 8583 formatted log entries to human readable format. If you see something that looks off or says "show it to Ron", do that. Some of the fields are untested so don't take the output as gospel. Instructions are below the fold.</p>
+<form name="myform">
+<p>Enter log data here:</p>
+<textarea rows="40" cols="70" class="inputtextarea" name="inputtext"></textarea>
+<textarea rows="40" cols="70" name="outputtext"></textarea>
+<p><input type="button" value="Convert to something you can read" onClick="displayText();"></p>
+</form>
+<h2>Instructions</h2>
+<p>This form only works for log entries that are in the format show below. It will not work for XML or custom spec log file entries.</p>
+<p>To test the to see if it works copy the sample log entry below and paste it into the window above. You need to copy the entire log entry from the line with "BHNUMS" until you get to a blank line.</p>
+<p>Even if the log entry looks like it's in the format below but the first line does not contain the string "BHNUMS" it a custom spec this form does not support.</p>
+<pre>
+(Sample entry redacted for privacy concerns. If you need to see this run contact me.)
+</pre>
+<script src="include.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
