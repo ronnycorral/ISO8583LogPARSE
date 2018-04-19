@@ -3,13 +3,13 @@
 <head>
   <title>Convert BHNUMS Log Entries</title>
   <link href="stylesheet.css" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="/images/favicon.ico">
   <meta charset="UTF-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <body class="indexpage"> 
 <h1>Convert BHNUMS Log Entries</h1>
-<p>Convert BHNUMS ISO 8583 formatted log entries to human readable format. If you see something that looks off or says "show it to Ron", do that. Some of the fields are untested so don't take the output as gospel. Instructions are below the fold.</p>
+<p>Convert BHNUMS ISO Blast log entries to human readable format. If you see something that looks off or says "show it to Ron", do that. Some of the fields are untested so don't take the output as gospel. Instructions are below the fold.</p>
 <form name="myform">
 <p>Enter log data here:</p>
 <textarea rows="40" cols="70" class="inputtextarea" name="inputtext"></textarea>
@@ -21,7 +21,17 @@
 <p>To test the to see if it works copy the sample log entry below and paste it into the window above. You need to copy the entire log entry from the line with "BHNUMS" until you get to a blank line.</p>
 <p>Even if the log entry looks like it's in the format below but the first line does not contain the string "BHNUMS" it a custom spec this form does not support.</p>
 <pre>
-(Sample entry redacted for privacy concerns. If you need to see this run contact me.)
+2014-04-15 03:00:08,677 [issuer-transceiver:XXXXX-XXXXXX-XXXX-X] OUT-XXX.XX.XX.XX:XXXXX-0000  42 48 4E 55 4D 53 00 03  01 00 02 02 10 72 38 44  BHNUMS.......r8D
+0010  01 0E C0 80 02 13 36 30  36 33 33 30 58 58 58 58  ......606330XXXX
+0020  58 58 58 58 58 58 58 58  58 72 54 00 00 00 00 45  XXXXXXXXXrT....E
+0030  00 00 14 04 15 12 00 05  81 49 80 12 00 05 14 04  .........I......
+0040  15 54 11 00 31 0B 36 30  33 30 30 30 58 58 58 58  .T..1.603000XXXX
+0050  58 30 30 30 34 31 35 31  32 30 30 30 35 30 30 30  X000415120005000
+0060  30 30 30 32 31 30 30 30  31 38 20 20 20 20 20 30  0002100018     0
+0070  33 39 20 20 20 36 30 33  30 30 30 58 58 58 58 58  39   603000XXXXX
+0080  20 20 20 20 07 10 00 1B  60 00 00 00 00 00 00 00      ....`.......
+0090  0C 35 34 35 30 35 33 37  30 30 32 36 30 00 00 00  .545053700260...
+00a0  45 00 00                                          E..
 </pre>
 <script src="include.js"></script>
 <script src="script.js"></script>
